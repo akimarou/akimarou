@@ -1,0 +1,68 @@
+.page-project {
+
+    &__container {
+        padding-top: 80px; 
+        padding-bottom: 40px;
+    }
+
+    &__title {
+        @include reset;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 30px;
+        font-weight: 800;
+    }
+
+
+    &__text{
+        @include reset;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+
+    .page-project {
+
+        &__container {
+            padding-top: 120px; 
+            padding-bottom: 40px;
+
+        }
+    
+        &__description {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+
+        }
+
+        &__title {
+            @include reset;
+            grid-column: span 6;
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        &__text {
+            grid-column: span 6;
+        }
+
+    }
+    
+}
+
+@media (min-width: $desktop-width) {
+
+    .page-project { 
+
+        &__title {
+            font-size: 48px;
+            line-height: 60px;
+        }
+        
+        &__text {
+            grid-column: 7 / 12;
+        }
+    }
+}
