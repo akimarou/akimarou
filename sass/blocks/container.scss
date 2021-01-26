@@ -1,0 +1,20 @@
+.container {
+    @include reset;
+
+    padding-left: 40px;
+    padding-right: 40px;
+
+    // display: flex;
+    // width: 100%;
+    // max-width: 100%;
+    // flex-wrap: wrap;
+    // align-content: stretch;
+
+}
+
+@media (min-width: $desktop-1600-width-container) {
+
+    .container {
+        max-width: 1600px;
+    }
+}

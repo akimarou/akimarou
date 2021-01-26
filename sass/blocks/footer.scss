@@ -1,0 +1,28 @@
+.footer {
+    @include reset;
+    background-color: white;
+    position: relative;
+
+    color: $dark-title;
+    font-size: 16px;
+    text-align: left;   
+
+    // padding-left: 40px;
+    // padding-right: 40px;
+
+    &__container {
+        padding-bottom: 20px;
+    }
+
+
+    &__copy {
+        @include reset;
+
+    }
+}
+
+@media (min-width: $desktop-1600-width-container) {
+    .footer {
+        max-width: 1600px;
+    }
+}

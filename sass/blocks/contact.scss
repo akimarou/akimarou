@@ -1,0 +1,40 @@
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__wrapper {
+        // display: grid;
+        // grid-template-columns: 2fr 1fr;
+        // column-count: 2;
+        // column-gap: 20px;
+    }
+
+    &__title {
+        @include reset;
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        @include reset;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+
+    .contact__wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-count: 2;
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .contact {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }   
+}
