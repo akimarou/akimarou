@@ -5,60 +5,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akimarou Portfolio</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
   </head>
 
   <body class="page__body">
     
-      <header class="header">
-        <a class="header__logo">
-          Akimarou
-        </a>
-        <nav class="header__site-navigation site-navigation">
-          <ul class="site-navigation__list">
-            <li class="site-navigation__item">
-              <a class="site-navigation__link site-navigation__link--current">Works</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="about.html">About</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link site-navigation__link--contact" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <header class="header">
+     
+      <a class="header__logo">Akimarou</a>
+      <nav class="header__site-nav site-nav site-nav--closed">
+        <ul class="site-nav__list">
+          <button href="#" class="site-nav__toggle" data-behavior="navToggle">
+            <span class="site-nav__toggle-icon"></span>
+            <!-- <span class="visually-hidden">Menu</span> -->
+          </button>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--current" href="index.html">Works</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="about.html">About</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--contact" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="overlay-menu"></div>
+      </nav>
+    </header>
 
-      <main class="page-main">
-        <div class="page-main__container container">
-          <h1 class="page-main__title">
-            Adriana De la Torre, también conocida como Akimaro, es diseñadora de profesión e ilustradora por vocación.
-          </h1>
 
-          <section class="page-main__masonry masonry">      
-              <div class="masonry__wrapper">
+    <main class="page-main">
+      <div class="page-main__container container">
+        <h1 class="page-main__title">
+          Adriana De la Torre, también conocida como Akimaro, es diseñadora de profesión e ilustradora por vocación.
+        </h1>
 
-                <ul class="masonry__list masonry__list--wide">
-                  <li class="masonry__item masonry__item--wide">
-                    
-                      <!-- <a class="masonry__link" aria-label="Open project page"> -->
-                        <picture>
-                          <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo1_desktop.webp 1x, img/photo1_desktop@2x.webp 2x">
-                          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo1_tablet.webp 1x, img/photo1_tablet@2x.webp 2x">
-                          <source type="image/webp" srcset="img/photo1_mobile.webp 1x, img/photo1_mobile@2x.webp 2x">
-                          <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
-                          <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x"> -->
-                          <!-- <img class="masonry__image" src="img/project-name_mobile.jpg" srcset="img/project-name_mobile@2x.jpg 2x" alt="Project title wide"> -->
-                          <img src="img/03.png" alt="View from a hot air balloon of other balloons" />
-                        </picture>
-                      <!-- </a> -->
-                      <div class="masonry__description">
-                          <h3 class="masonry__caption">Project title wide</h3>
-                      </div>
-                
-                  </li>
+        <section class="page-main__masonry masonry">      
+            <div class="masonry__wrapper">
 
-                  <li class="masonry__item masonry__item--wide">
+              <ul class="masonry__list masonry__list--wide">
+                <li class="masonry__item masonry__item--wide">
                   
                     <!-- <a class="masonry__link" aria-label="Open project page"> -->
                       <picture>
@@ -68,78 +54,58 @@
                         <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x"> -->
                         <!-- <img class="masonry__image" src="img/project-name_mobile.jpg" srcset="img/project-name_mobile@2x.jpg 2x" alt="Project title wide"> -->
-                        <img src="img/04.png" alt="View from a hot air balloon of other balloons" />
+                        <img src="img/03.png" alt="View from a hot air balloon of other balloons">
                       </picture>
                     <!-- </a> -->
                     <div class="masonry__description">
                         <h3 class="masonry__caption">Project title wide</h3>
                     </div>
               
-                  </li>
+                </li>
 
-                  <li class="masonry__item masonry__item--wide">
-                    
+                <li class="masonry__item masonry__item--wide">
+                
+                  <!-- <a class="masonry__link" aria-label="Open project page"> -->
+                    <picture>
+                      <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo1_desktop.webp 1x, img/photo1_desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo1_tablet.webp 1x, img/photo1_tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo1_mobile.webp 1x, img/photo1_mobile@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x"> -->
+                      <!-- <img class="masonry__image" src="img/project-name_mobile.jpg" srcset="img/project-name_mobile@2x.jpg 2x" alt="Project title wide"> -->
+                      <img src="img/04.png" alt="View from a hot air balloon of other balloons">
+                    </picture>
+                  <!-- </a> -->
+                  <div class="masonry__description">
+                      <h3 class="masonry__caption">Project title wide</h3>
+                  </div>
+            
+                </li>
+
+                <li class="masonry__item masonry__item--wide">
+                  
+                  <!-- <a class="masonry__link" aria-label="Open project page"> -->
+                    <picture>
+                      <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo1_desktop.webp 1x, img/photo1_desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo1_tablet.webp 1x, img/photo1_tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo1_mobile.webp 1x, img/photo1_mobile@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x"> -->
+                      <!-- <img class="masonry__image" src="img/project-name_mobile.jpg" srcset="img/project-name_mobile@2x.jpg 2x" alt="Project title wide"> -->
+                      <img src="img/05.png" alt="View from a hot air balloon of other balloons">
+                    </picture>
+                  <!-- </a> -->
+                  <div class="masonry__description">
+                      <h3 class="masonry__caption">Project title wide</h3>
+                  </div>
+
+                </li>
+              </ul>
+
+              <ul class="masonry__list masonry__list--small">
+                <li class="masonry__item masonry__item--small">
+                
                     <!-- <a class="masonry__link" aria-label="Open project page"> -->
-                      <picture>
-                        <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo1_desktop.webp 1x, img/photo1_desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/photo1_tablet.webp 1x, img/photo1_tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/photo1_mobile.webp 1x, img/photo1_mobile@2x.webp 2x">
-                        <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
-                        <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x"> -->
-                        <!-- <img class="masonry__image" src="img/project-name_mobile.jpg" srcset="img/project-name_mobile@2x.jpg 2x" alt="Project title wide"> -->
-                        <img src="img/05.png" alt="View from a hot air balloon of other balloons" />
-                      </picture>
-                    <!-- </a> -->
-                    <div class="masonry__description">
-                        <h3 class="masonry__caption">Project title wide</h3>
-                    </div>
-
-                  </li>
-                </ul>
-
-                <ul class="masonry__list masonry__list--small">
-                  <li class="masonry__item masonry__item--small">
-                  
-                      <!-- <a class="masonry__link" aria-label="Open project page"> -->
-                        <picture>
-                          <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo1_desktop.webp 1x, img/photo1_desktop@2x.webp 2x">
-                          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo1_tablet.webp 1x, img/photo1_tablet@2x.webp 2x">
-                          <source type="image/webp" srcset="img/photo1_mobile.webp 1x, img/photo1_mobile@2x.webp 2x">
-                          <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
-                          <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x"> -->
-                          <!-- <img class="masonry__image" src="img/project-name_mobile.jpg" srcset="img/project-name_mobile@2x.jpg 2x" alt="Foto title"> -->
-                          <img src="img/02.png" alt="View from a hot air balloon of other balloons" />
-                        </picture>
-                      <!-- </a> -->
-                      <div class="masonry__description">
-                          <h3 class="masonry__caption">Project title 02</h3>
-                      </div>
-                
-                  </li>
-
-                  <li class="masonry__item masonry__item--small">
-                  
-                      <!-- <a class="masonry__link" aria-label="Open project page"> -->
-                        <picture>
-                          <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo1_desktop.webp 1x, img/photo1_desktop@2x.webp 2x">
-                          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo1_tablet.webp 1x, img/photo1_tablet@2x.webp 2x">
-                          <source type="image/webp" srcset="img/photo1_mobile.webp 1x, img/photo1_mobile@2x.webp 2x">
-                          <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
-                          <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x"> -->
-                          <!-- <img class="masonry__image" src="img/project-name_mobile.jpg" srcset="img/project-name_mobile@2x.jpg 2x" alt="Foto title"> -->
-                          <img src="img/01.png" alt="View from a hot air balloon of other balloons" />
-                        </picture>
-                      <div class="masonry__description">
-                          <h3 class="masonry__caption">Project title 02</h3>
-                      </div>
-                      <!-- </a> -->
-                
-                  </li>
-
-
-                  <li class="masonry__item masonry__item--small">
-                  
-                      <!-- <a class="masonry__link" aria-label="Open project page"> -->
                       <picture>
                         <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo1_desktop.webp 1x, img/photo1_desktop@2x.webp 2x">
                         <source type="image/webp" media="(min-width: 768px)" srcset="img/photo1_tablet.webp 1x, img/photo1_tablet@2x.webp 2x">
@@ -147,36 +113,76 @@
                         <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x"> -->
                         <!-- <img class="masonry__image" src="img/project-name_mobile.jpg" srcset="img/project-name_mobile@2x.jpg 2x" alt="Foto title"> -->
-                        <img src="img/02.png" alt="View from a hot air balloon of other balloons" />
+                        <img src="img/02.png" alt="View from a hot air balloon of other balloons">
                       </picture>
-                      <!-- </a> -->
-                      <div class="masonry__description">
-                          <h3 class="masonry__caption">Project title</h3>
-                      </div>
-                    
-                  </li>
-                </ul>  
-              </div>
-          </section>
+                    <!-- </a> -->
+                    <div class="masonry__description">
+                        <h3 class="masonry__caption">Project title 02</h3>
+                    </div>
+              
+                </li>
 
-          <section class="page-main__contact contact">
-            <div class="contact__wrapper">
-              <h2 class="contact__title">Contact</h2>
-              <div class="contact__items">
-                <a class="contact__item">hi@akimarou.com</a>
-                <a class="contact__item">Instagram</a>
-              </div>
+                <li class="masonry__item masonry__item--small">
+                
+                    <!-- <a class="masonry__link" aria-label="Open project page"> -->
+                      <picture>
+                        <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo1_desktop.webp 1x, img/photo1_desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/photo1_tablet.webp 1x, img/photo1_tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/photo1_mobile.webp 1x, img/photo1_mobile@2x.webp 2x">
+                        <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x"> -->
+                        <!-- <img class="masonry__image" src="img/project-name_mobile.jpg" srcset="img/project-name_mobile@2x.jpg 2x" alt="Foto title"> -->
+                        <img src="img/01.png" alt="View from a hot air balloon of other balloons">
+                      </picture>
+                    <div class="masonry__description">
+                        <h3 class="masonry__caption">Project title 02</h3>
+                    </div>
+                    <!-- </a> -->
+              
+                </li>
+
+
+                <li class="masonry__item masonry__item--small">
+                
+                    <!-- <a class="masonry__link" aria-label="Open project page"> -->
+                    <picture>
+                      <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo1_desktop.webp 1x, img/photo1_desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo1_tablet.webp 1x, img/photo1_tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo1_mobile.webp 1x, img/photo1_mobile@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x"> -->
+                      <!-- <img class="masonry__image" src="img/project-name_mobile.jpg" srcset="img/project-name_mobile@2x.jpg 2x" alt="Foto title"> -->
+                      <img src="img/02.png" alt="View from a hot air balloon of other balloons">
+                    </picture>
+                    <!-- </a> -->
+                    <div class="masonry__description">
+                        <h3 class="masonry__caption">Project title</h3>
+                    </div>
+                  
+                </li>
+              </ul>  
             </div>
-          </section>
-        </div>
-      </main>
+        </section>
 
-      {% include footer.html %}
-      <!-- <footer class="footer">
-        <span class="footer__copy">
-          Adriana de la Torre <span>&#169;</span>
-        </span>
-      </footer> -->
+        <section class="page-main__contact contact">
+          <div class="contact__wrapper">
+            <h2 class="contact__title">Contact</h2>
+            <div class="contact__items">
+              <a class="contact__item">hi@akimarou.com</a>
+              <a class="contact__item">Instagram</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <span class="footer__copy">
+            Adriana de la Torre <span>&#169;</span>
+            </span>
+        </div>
+    </footer>
 
     <!-- <script src="js/script.js"></script> -->
   </body>
