@@ -5,73 +5,90 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Akimarou Portfolio</title>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
     </head>
 
     <body class="page__body">
+
         <header class="header">
-            <a class="header__logo">
-              Akimarou
-            </a>
-            <nav class="header__site-navigation site-navigation">
-              <ul class="site-navigation__list">
-                <li class="site-navigation__item">
-                  <a class="site-navigation__link site-navigation__link--current">Works</a>
-                </li>
-                <li class="site-navigation__item">
-                  <a class="site-navigation__link" href="about.html">About</a>
-                </li>
-                <li class="site-navigation__item">
-                  <a class="site-navigation__link site-navigation__link--contact" href="contact.html">Contact</a>
-                </li>
-                <a href="#" class="site-navigation-toggle" data-behavior="navToggle">Menu</a>
-              </ul>
-            </nav>
+        <div class="header__logo-container">  
+            <a class="header__logo">Akimarou</a>
+        </div>  
+        <nav class="header__site-nav site-nav site-nav--closed site-nav--nojs">
+            <ul class="site-nav__list">
+            <!-- <button href="#" class="site-nav__toggle" data-behavior="navToggle">
+                <span class="site-nav__toggle-icon"></span> -->
+                <!-- <span class="visually-hidden">Menu</span> -->
+            
+            <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--current" href="index.html">Works</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link" href="about.html">About</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--contact" href="contact.html">Contact</a>
+            </li>
+            </ul>
+        </nav>
         </header>
 
         <main class="page-about">
             <div class="page-about__container container">
 
-                <div class="page-about__about-description about-description">
-                    <div class="about-description__text">
-                        <h1 class="about-description__title">
-                            Fight Club Illustration
-                        </h1>
-                        <p class="about-description__text">
-                            Loneliness.<br>
-                            Are we alone all the time?<br>
-                            This was the theme of my second battle on @illustrationfightclub. I won and I’m going to the semifinals! :D 🇲🇽
-                        </p>
+                <div class="page-about__description description">
+
+                    <div class="description__photo">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="img/akimarou-img.png 1x, img/akimarou-img@2x.png 2x"> 
+                            <img src="img/akimarou-img.png" alt="Adriana de la Torre personal photo" width="377" height="496">
+                          </picture>
                     </div>
 
-                    <div class="about-description__photo">
-                        <picture>
-                            <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo1_desktop.webp 1x, img/photo1_desktop@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo1_tablet.webp 1x, img/photo1_tablet@2x.webp 2x">
-                            <source type="image/webp" srcset="img/photo1_mobile.webp 1x, img/photo1_mobile@2x.webp 2x">
-                            <source media="(min-width: 1200px)" srcset="img/photo1_desktop.jpg 1x, img/photo1_desktop@2x.jpg 2x">
-                            <source media="(min-width: 768px)" srcset="img/photo1_tablet.jpg 1x, img/photo1_tablet@2x.jpg 2x"> -->
-                            <!-- <img class="masonry__image" src="img/project-name_mobile.jpg" srcset="img/project-name_mobile@2x.jpg 2x" alt="Project title wide"> -->
-                            <img src="img/03.png" alt="Adriana de la Torre personal photo">
-                          </picture>
+                    <div class="description__content">
+                        <h1 class="description__title">
+                            Hi! <br> 
+                         
+                            I’m Adriana De la Torre, also known as Akimarou.
+                        </h1>
+                        <p class="description__text">
+                            Soy también conocida como Akimaro, es diseñadora de profesión e ilustradora por vocación. Combinando estas dos técnicas, se ha dedicado a ayudar a clientes a encontrar su propia voz y a contar historias a través de las imágenes.
+                        </p> 
+                        <p class="description__text">
+                            Además, desde los 16 años, publica cómics de forma independiente y es co-autora del webcómic Parellet, que cuenta con dos tomos impresos y se publica desde el 2012.
+                        </p>
+
+                        <div class="description__bestofs">
+                            
+                            <div class="description__bestof">
+                                <h3 class="description__title">Awards</h3>
+                                <ul class="description__list">
+                                    <li>Award Name</li>
+                                    <li>Award Name</li>
+                                    <li>Award Name</li>
+                                    <li>Merit of 2020 Gerard Unger Scholarship Award</li>
+                                </ul>
+                                  
+                            </div>
+                            <div class="description__bestof">
+                                <h3 class="description__title">Books</h3>
+                                <ul class="description__list">
+                                    <li>Book name</li>
+                                    <li>Book name</li>
+                                    <li>Book name</li>
+                                    <li>Book name</li>
+                                </ul>
+                                  
+                            </div>
+
+                        </div>
+                        </div>
                     </div>
                 </div>
 
- 
-            
-
-
-                <!-- <section class="page-project__gallery gallery">
-                    <div class="gallery__wrapper">
-                        
-                        
-                    </div>
-
-                </section> -->
-
-
+               
            
-            </div>
+            
 
         </main>
 
